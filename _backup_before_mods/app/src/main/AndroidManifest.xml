@@ -1,0 +1,6 @@
+<manifest package="com.example.fbpip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+    <application android:label="FB PiP Module">
+    </application>
+</manifest>

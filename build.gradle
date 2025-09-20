@@ -1,0 +1,20 @@
+// Added by CI-fix script: provide AGP and Kotlin plugin classpaths for CI when plugin DSL versions are not present
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle Plugin version chosen to be compatible with Gradle 7.5 and compileSdk 33
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        // Kotlin Gradle plugin - adjust version as needed if project requires newer Kotlin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
